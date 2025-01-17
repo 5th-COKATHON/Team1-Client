@@ -1,13 +1,18 @@
 import angel from "../assets/images/angel.png";
 import angel_bg from "../assets/images/angel_bg.png";
 import AngelChat from "../components/AngelChat";
-
+import angelhome from "../assets/images/angelhome.png";
+import { useNavigate } from "react-router-dom";
 const AngelConversation = () => {
+  const navigate = useNavigate();
   return (
     <div
       className="w-full h-full bg-cover "
       style={{ backgroundImage: `url(${angel_bg})` }}
     >
+      <div onClick={() => { (navigate('/home')) }} className="absolute z-50 top-16 right-16 cursor-pointer" style={{ width: "100px", height: "100px", borderRadius: "50%", backgroundColor: "#50C3C6" }} >
+        <img className="w-full h-full" src={angelhome} />
+      </div>
       <div
         className={
           "w-full h-full relative box-border p-4  transition-opacity duration-1000"
