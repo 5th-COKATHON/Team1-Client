@@ -4,10 +4,10 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 const Trash = () => {
     return (
         <DotLottieReact
-            src="https://lottie.host/e4d2cac3-6c3f-4248-aa07-1625ade6a4b0/Ydr3ImxFaJ.lottie"
+            src="https://lottie.host/61409260-7ade-4da1-bc36-c20c237991c9/Sux5ZgaYAD.lottie"
             loop
             autoplay
-            className=' w-120 h-auto'
+            className='w-2/4 h-auto'
             speed={0.8}
         />
     );
