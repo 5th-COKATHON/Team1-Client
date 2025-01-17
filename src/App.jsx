@@ -17,7 +17,8 @@ function App() {
     <BrowserRouter>
       <GlobalStyle />
       <Routes>
-        <Route path="/" element={<Root />}></Route>
+        <Route path="/" element={<Root />}>
+        </Route>
       </Routes>
     </BrowserRouter>
   );
