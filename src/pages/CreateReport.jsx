@@ -1,5 +1,5 @@
 const CreateReport = () => {
-  <div>CreateReport</div>;
+  return <div>CreateReport</div>;
 };
 
 export default CreateReport;
