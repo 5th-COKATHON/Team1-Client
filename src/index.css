@@ -25,3 +25,7 @@
 .logininput {
   @apply w-full px-[18px] py-4 rounded-[32px] border-login-pink  font-SB placeholder-faint-pink;
 }
+
+.home-button {
+  @apply w-full px-[18px] py-3.5 rounded-xl text-white bg-login-pink font-SB text-3xl;
+}
