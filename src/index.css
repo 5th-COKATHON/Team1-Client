@@ -8,6 +8,12 @@
   src: url("./assets/fonts/SBaggroL.ttf");
 }
 
+@font-face {
+  font-family: Pretendard-Bold;
+  font-weight: 900;
+  src: url("./assets/fonts/Pretendard-Bold.otf");
+}
+
 .flexbox {
   @apply flex overflow-hidden box-border;
 }
