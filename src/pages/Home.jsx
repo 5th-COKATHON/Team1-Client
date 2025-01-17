@@ -1,5 +1,9 @@
+import Trash from "../components/Trash";
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <Trash />
+  )
 };
 
 export default Home;

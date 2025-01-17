@@ -6,7 +6,6 @@ import { apiLogin } from "../apis";
 const Login = () => {
   const navigation = useNavigate();
   const [email, setEmail] = useState("");
-  const [res, setRes] = useState();
   const handleChange = (e) => {
     setEmail(e.target.value);
   };
