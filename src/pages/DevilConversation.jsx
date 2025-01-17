@@ -1,13 +1,18 @@
 import devil from "../assets/images/devil.png";
 import devil_bg from "../assets/images/devil_bg.png";
 import DevilChat from "../components/DevilChat";
-
+import devilhome from "../assets/images/devilhome.png";
+import { useNavigate } from "react-router-dom";
 const DevilConversation = () => {
+  const navigate = useNavigate();
   return (
     <div
       className="w-full h-full bg-cover "
       style={{ backgroundImage: `url(${devil_bg})` }}
     >
+      <div onClick={() => { (navigate('/home')) }} className="absolute z-50 top-16 right-16 cursor-pointer" style={{ width: "100px", height: "100px", borderRadius: "50%", backgroundColor: "#50C3C6" }} >
+        <img className="w-full h-full" src={devilhome} />
+      </div>
       <div
         className={
           "w-full h-full relative box-border p-4  transition-opacity duration-1000"
