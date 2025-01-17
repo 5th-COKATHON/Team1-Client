@@ -1,9 +1,11 @@
-import Trash from "../components/Trash";
-
+import mainbg from "../assets/images/mainbg.png";
 const Home = () => {
   return (
-    <Trash />
-  )
+    <div
+      className="w-full h-full bg-cover "
+      style={{ backgroundImage: `url(${mainbg})` }}
+    ></div>
+  );
 };
 
 export default Home;

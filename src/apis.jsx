@@ -1,16 +1,21 @@
-import axios from 'axios';
+import axios from "axios";
 
 const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const instance = axios.create({
-    baseURL: BASE_URL,
-    withCredentials: true
+  baseURL: BASE_URL,
+  withCredentials: true,
 });
 export const apiLogin = async (email) =>
-    await instance.post('/api/members', email);
+  await instance.post("/api/members", email);
 
 export const apiGetPoint = async (memberId) =>
-    await instance.get(`/api/members/${memberId}/point`);
+  await instance.get(`/api/members/${memberId}/point`);
 
 export const apiGetEmotion = async (memberId) =>
-    await instance.get(`/api/members/${memberId}/emotions`);
+  await instance.get(`/api/members/${memberId}/emotions`);
+
+export const apiGetDetail = async (report, memberId) =>
+  await instance.get(`/api/bot/emotion/members/${memberId}`, {
+    params: { prompt: report },
+  });
