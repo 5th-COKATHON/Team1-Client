@@ -1,12 +1,11 @@
-import { Outlet } from 'react-router-dom';
-import { Wrapper } from '../styles/styled';
+import { Outlet } from "react-router-dom";
 function Root() {
-    return (
-        <Wrapper>
-            <Outlet />
-            <div className=' text-9xl'> 123 </div>
-        </Wrapper>
-    );
+  return (
+    <div>
+      <Outlet />
+      <div className=" text-9xl"> 123 </div>
+    </div>
+  );
 }
 
 export default Root;
