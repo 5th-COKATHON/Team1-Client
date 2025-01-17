@@ -12,20 +12,20 @@ import {
 } from "recharts";
 import negative from "../assets/images/negative.png";
 import positive from "../assets/images/positive.png";
-const EmotionChart = () => {
-    const positiveSum = 30; // Positive 합계
-    const negativeSum = 60; // Negative 합계
+const EmotionChart = ({ data }) => {
+    const positiveSum = data.emotionPointResponse.positive; // Positive 합계
+    const negativeSum = data.emotionPointResponse.negative; // Negative 합계
     const emotionData = [
-        { name: "행복", value: 10, category: "Positive", color: "#FF6FA5" },
-        { name: "사랑", value: 20, category: "Positive", color: "#FF6FA5" },
-        { name: "놀람", value: 5, category: "Positive", color: "#FF6FA5" },
-        { name: "감사", value: 25, category: "Positive", color: "#FF6FA5" },
-        { name: "희망", value: 30, category: "Positive", color: "#FF6FA5" },
-        { name: "슬픔", value: 10, category: "Negative", color: "#8A72FF" },
-        { name: "분노", value: 5, category: "Negative", color: "#8A72FF" },
-        { name: "두려움", value: 3, category: "Negative", color: "#8A72FF" },
-        { name: "혐오", value: 22, category: "Negative", color: "#8A72FF" },
-        { name: "후회", value: 14, category: "Negative", color: "#8A72FF" },
+        { name: "행복", value: data.emotionResponse.happiness, category: "Positive", color: "#FF6FA5" },
+        { name: "사랑", value: data.emotionResponse.love, category: "Positive", color: "#FF6FA5" },
+        { name: "놀람", value: data.emotionResponse.surprise, category: "Positive", color: "#FF6FA5" },
+        { name: "감사", value: data.emotionResponse.regret, category: "Positive", color: "#FF6FA5" },
+        { name: "희망", value: data.emotionResponse.hope, category: "Positive", color: "#FF6FA5" },
+        { name: "슬픔", value: data.emotionResponse.sadness, category: "Negative", color: "#8A72FF" },
+        { name: "분노", value: data.emotionResponse.anger, category: "Negative", color: "#8A72FF" },
+        { name: "두려움", value: data.emotionResponse.fear, category: "Negative", color: "#8A72FF" },
+        { name: "혐오", value: data.emotionResponse.disgust, category: "Negative", color: "#8A72FF" },
+        { name: "후회", value: data.emotionResponse.gratitude, category: "Negative", color: "#8A72FF" },
     ];
 
     return (
