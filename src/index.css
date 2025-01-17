@@ -2,10 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: SBaggroL;
+  font-weight: 400;
+  src: url("./assets/fonts/SBaggroL.ttf");
+}
+
 .flexbox {
-    @apply flex overflow-hidden box-border
+  @apply flex overflow-hidden box-border;
 }
 
 .flexcenter {
-    @apply flex justify-center items-center
+  @apply flex justify-center items-center;
+}
+
+.logininput {
+  @apply w-full px-[18px] py-4 rounded-[32px] border-login-pink border-4 font-SB placeholder-faint-pink;
 }
