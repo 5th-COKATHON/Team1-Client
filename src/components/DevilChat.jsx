@@ -1,5 +1,5 @@
 import useTyping from "../utils/useTyping";
-import angelBtn from "../assets/images/angelBtn.png";
+import DevilBtn from "../assets/images/devilBtn.png";
 const DevilChat = ({ comment, handleClick }) => {
     const { text, isEnd } = useTyping(comment);
 
@@ -15,7 +15,7 @@ const DevilChat = ({ comment, handleClick }) => {
                 <p className=" text-xl font-medium font-SB text-white ">악마 팀장님</p>
             </div>
             <div className="absolute w-[24px] h-[24px] z-50 bottom-20 right-72 cursor-pointer">
-                <img src={angelBtn} onClick={handleClick} />
+                <img src={DevilBtn} onClick={handleClick} />
             </div>
         </div>
     )
