@@ -13,7 +13,7 @@ const CreateReport = () => {
   };
   return (
     <div className="flexcenter flex-col w-full gap-10 h-full bg-[url('/src/assets/images/createbg.png')] bg-cover">
-      <div className="flex flex-col rounded-xl gap-7 bg-create-sky w-7/12 h-4/6 px-14 py-5">
+      <div className="flex flex-col rounded-xl gap-7 shadow-xl bg-create-sky w-7/12 h-4/6 px-14 py-5">
         <div className="flex items-center gap-4 py-2 border-b-4 border-b-black">
           <div className="bg-login-pink w-2 h-8" />
           <h1 className="text-4xl font-Pretendard">MODE</h1>
