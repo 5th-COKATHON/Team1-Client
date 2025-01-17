@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { apiGetDetail } from "../apis";
+import backspace from "../assets/images/backspace.png";
 
 const CreateReport = () => {
   const navigation = useNavigate();
@@ -22,7 +23,12 @@ const CreateReport = () => {
       .catch((error) => console.log(error));
   };
   return (
-    <div className="flexcenter flex-col w-full gap-10 h-full bg-[url('/src/assets/images/createbg.png')] bg-cover">
+    <div className="relative flexcenter flex-col w-full gap-10 h-full bg-[url('/src/assets/images/createbg.png')] bg-cover">
+      <img
+        src={backspace}
+        className="w-20 absolute top-11 left-11"
+        onClick={() => navigation(-1)}
+      />
       <div className="flex flex-col rounded-xl gap-7 shadow-xl bg-create-sky w-7/12 h-4/6 px-14 py-5">
         <div className="flex items-center gap-4 py-2 border-b-4 border-b-black">
           <div className="bg-login-pink w-2 h-8" />
