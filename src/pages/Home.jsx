@@ -1,9 +1,7 @@
 import Trash from "../components/Trash";
 
 const Home = () => {
-  return (
-    <Trash />
-  )
+  return <Trash />;
 };
 
 export default Home;
