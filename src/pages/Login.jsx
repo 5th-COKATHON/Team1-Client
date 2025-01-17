@@ -6,16 +6,18 @@ import { apiLogin } from "../apis";
 const Login = () => {
   const navigation = useNavigate();
   const [email, setEmail] = useState("");
+  const [res, setRes] = useState();
   const handleChange = (e) => {
     setEmail(e.target.value);
   };
 
   const handleClick = async () => {
-    const res = await apiLogin(email);
-    const memberId = res.data.id;
-    console.log(memberId);
-    localStorage.setItem(memberId);
-    navigation("/home");
+    await apiLogin({ email: email })
+      .then(res => {
+        localStorage.setItem('memberId', res.data.data.id);
+        navigation("/home");
+      })
+      .catch(error => console.log(error))
   };
 
   return (
