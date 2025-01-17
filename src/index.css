@@ -5,3 +5,7 @@
 .flexbox {
     @apply flex overflow-hidden box-border
 }
+
+.flexcenter {
+    @apply flex justify-center items-center
+}
