@@ -17,5 +17,5 @@
 }
 
 .logininput {
-  @apply w-full px-[18px] py-4 rounded-[32px] border-login-pink border-4 font-SB placeholder-faint-pink;
+  @apply w-full px-[18px] py-4 rounded-[32px] border-login-pink  font-SB placeholder-faint-pink;
 }
