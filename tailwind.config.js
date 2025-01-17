@@ -14,10 +14,15 @@ export default {
       colors: {
         "login-pink": "#F6609A",
         "faint-pink": "#FFA2C6",
+
         "devil-purple": "#7C3BF6",
+
+        "create-sky": "#DDF0FB",
+
       },
       fontFamily: {
         SB: ["SBaggroL"],
+        Pretendard: ["Pretendard-Bold"],
       },
     },
   },

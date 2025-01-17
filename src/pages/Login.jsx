@@ -12,11 +12,11 @@ const Login = () => {
 
   const handleClick = async () => {
     await apiLogin({ email: email })
-      .then(res => {
-        localStorage.setItem('memberId', res.data.data.id);
+      .then((res) => {
+        localStorage.setItem("memberId", res.data.data.id);
         navigation("/home");
       })
-      .catch(error => console.log(error))
+      .catch((error) => console.log(error));
   };
 
   return (
