@@ -4,8 +4,8 @@ import Root from "./pages/Root";
 import "./index.css";
 import Home from "./pages/Home";
 import CreateReport from "./pages/CreateReport";
-import SignUp from "./pages/SignUp";
 import ViewReport from "./pages/ViewReport";
+import Login from "./pages/Login";
 const GlobalStyle = createGlobalStyle`
   body{
     font-family: 'Pretendard',sans-serif;
@@ -24,7 +24,7 @@ function App() {
         <Route path="/" element={<Root />}>
           <Route path="home" element={<Home />} />
           <Route path="createreport" element={<CreateReport />} />
-          <Route path="signup" element={<SignUp />} />
+          <Route path="login" element={<Login />} />
           <Route path="viewreport" element={<ViewReport />} />
         </Route>
       </Routes>
